@@ -27,25 +27,33 @@ div {
     width: 500px;
     height: 700px;
 
-    background-color: #d3d3d3;
+    background-color: #a9a9a9;
 }
 
 .screen-container {
     padding: 0 0;
-    
+    text-align: right;
+    background-color: #d3d3d3;
+}
+
+#calc-history,
+#calc-current {
+    background-color: #d3d3d3;
 }
 
 .del-clr-container {
-    padding: 10px 0;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    border: 0;
 }
 
 #clearBtn,
 #deleteBtn {
-    font-size: 20px;
-    padding: 20px 70px;
-    border: 0px solid black;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 24px 75px;
+    border: 0px;
     border-radius: 5px;
 }
 
@@ -60,8 +68,17 @@ div {
 }
 
 .btn-grid {
+    padding: 0;
     display: grid;
     flex: auto;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    border: 0px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 5px;
 }
