@@ -9,16 +9,35 @@
     <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
+    <div class="body-container">
     <div class="calculator-container">
         <div class="screen-container">
-            <div id="calc-history"></div>
-            <div id="calc-current"></div>
+            <div id="calc-history">History</div>
+            <div id="calc-current">Current</div>
         </div>
         <div class="del-clr-container">
             <button id="clearBtn">Clear</button>
             <button id="deleteBtn">Delete</button>
         </div>
-        <div id="number-operator-container" class="grid"></div>
+        <div id="number-operator-container" class="btn-grid">
+            <button class="btn" data-number>7</button>
+            <button class="btn" data-number>8</button>
+            <button class="btn" data-number>9</button>
+            <button class="btn" data-operator>÷</button>
+            <button class="btn" data-number>4</button>
+            <button class="btn" data-number>5</button>
+            <button class="btn" data-number>6</button>
+            <button class="btn" data-operator>×</button>
+            <button class="btn" data-number>1</button>
+            <button class="btn" data-number>2</button>
+            <button class="btn" data-number>3</button>
+            <button class="btn" data-operator>-</button>
+            <button class="btn" id="pointBtn">.</button>
+            <button class="btn" data-number>0</button>
+            <button class="btn" id="equalsBtn">=</button>
+            <button class="btn" data-operator>+</button>
+        </div>
+    </div>
     </div>
 </body>
 </html>
