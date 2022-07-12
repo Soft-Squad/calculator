@@ -19,6 +19,7 @@ window.addEventListener('keydown', getKeyboardInput);
 equalsBtn.addEventListener('click', evaluate);
 clearBtn.addEventListener('click', clear);
 deleteBtn.addEventListener('click', deleteOperand);
+negativeBtn.addEventListener('click', appendNegNumber);
 pointBtn.addEventListener('click', addDecimal);
 
 numberBtns.forEach((button) => {
@@ -47,6 +48,15 @@ function clear() {
     firstOperand = '';
     secondOperand = '';
     currOperation = null;
+}
+
+function appendNegNumber() {
+    if (resetScreen) clearScreen();
+    if (calcScreenCurrent.textContent === '') {
+        calcScreenCurrent.textContent = '0';
+    }
+    if (calcScreenCurrent.textContent.includes('-')) return;
+    calcScreenCurrent.textContent = '-' + calcScreenCurrent.textContent;
 }
 
 function addDecimal() {
