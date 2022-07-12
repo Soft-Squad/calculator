@@ -77,13 +77,21 @@ button {
 
 #clearBtn {
     grid-column: span 2;
-    background-color: lightcoral;
+    background-color: #f08080;
     color: black;
 }
 
 #deleteBtn {
     background-color: #aaf;
     color: black;
+}
+
+#clearBtn:hover {
+    background-color: #ee6767;
+}
+
+#deleteBtn:hover {
+    background-color: #99e;
 }
 
 .btn-grid {
