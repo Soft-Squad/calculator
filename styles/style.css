@@ -41,23 +41,16 @@ div {
     background-color: #d3d3d3;
 }
 
-.del-clr-container {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    border: 0;
-}
-
 #clearBtn,
 #deleteBtn {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    padding: 24px 75px;
     border: 0px;
     border-radius: 5px;
 }
 
 #clearBtn {
+    grid-column: span 2;
     background-color: lightcoral;
     color: black;
 }
